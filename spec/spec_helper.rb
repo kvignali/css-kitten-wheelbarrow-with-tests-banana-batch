@@ -7,7 +7,7 @@ GreenOnion.configure do |c|
     :prefix => nil,
     :root => "root"
   }
-  c.dimensions = { :width => 1440, :height => 768 }
+  c.dimensions = { :width => 1440, :height => 900 }
   c.driver = :selenium
 end
 
