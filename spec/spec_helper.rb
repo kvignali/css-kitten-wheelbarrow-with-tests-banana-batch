@@ -1,6 +1,10 @@
 GreenOnion.configure do |c|
   c.skins_dir = './spec/skins'
   c.driver = :selenium
+  c.dimensions = { 
+    :width => 1440, 
+    :height => 768 
+  }
 end
 
 def create_screenshots
