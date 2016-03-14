@@ -7,6 +7,12 @@ GreenOnion.configure do |c|
   }
 end
 
+RSpec.configure do |config|
+  config.before(:each) do
+    Capybara.page.driver.browser.manage.window.resize_to(1440, 768)
+  end
+end
+
 def create_screenshots
   GreenOnion.skin_visual('http://localhost:8000/index.html')
 end
