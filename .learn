@@ -8,3 +8,5 @@ tags:
 type:
   - lab
 resources: 0
+tests:
+  - green_onion
